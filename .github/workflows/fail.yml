@@ -1,4 +1,4 @@
-name: Pass
+name: Fail
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  pass:
+  fail:
     runs-on: ubuntu-22.04
 
     steps:
