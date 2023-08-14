@@ -1,0 +1,16 @@
+name: Pass
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pass:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v3.6.0
+
+      - run: exit 1
